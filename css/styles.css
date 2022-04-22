@@ -74,6 +74,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--header-color);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover, .header-link:focus {
   color: var(--accent-color);
@@ -86,6 +87,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--text-color);
 margin-left: 30px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:hover, .header-mail:focus,
 .header-tel:hover, .header-tel:focus{
@@ -142,7 +144,9 @@ text-transform: uppercase;
   background-color: var(--accent-color);
   height: 50px;
   min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover, 
 .hero-btn:focus {
@@ -200,6 +204,7 @@ margin-left: -30px;
 .aside-item {
 flex-basis: calc(100% / 3 - 30px);
 margin-left: 30px;
+position: relative;
 }
 .aside-title{
 margin-bottom: 50px;
@@ -209,6 +214,22 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--header-color);
+}
+.aside-top-text {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 /*-----------Наша команда----------- */
 .command {
@@ -274,6 +295,7 @@ margin-left: 10px;
   align-items: center;
   justify-content: center;
   fill: #AFB1B8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .command-soc-link:hover, .command-soc-link:focus {
 background-color: var(--accent-color);
@@ -312,6 +334,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 fill: #AFB1B8;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover, 
 .clients-link:focus {
@@ -366,6 +389,7 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-tel:hover,.footer-mail:hover,
 .footer-tel:focus, .footer-mail:focus {
@@ -402,6 +426,7 @@ flex-direction: column;
   align-items: center;
   justify-content: center;
   fill: #FFFFFF;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-link:hover, .footer-soc-link:focus {
 background-color: var(--accent-color);
